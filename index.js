@@ -28,11 +28,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+   //The variable count in counter1 is declared within the function.
+   //the code inside counter2 has access to the varriable count that is on the global scope
   
   2. Which of the two uses a closure? How can you tell?
-  
+     counter2. because its reaching outward for context.
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+    // counter1 would be better when creating recursive functions.
+    // counter2 would be better if the variable is going to be used throught the program
 */
 
 // counter1 code
